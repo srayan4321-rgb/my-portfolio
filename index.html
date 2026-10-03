@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syed Mohammed Rayan — Portfolio</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+
+<nav class="dock" aria-label="Main">
+  <a class="dock-item" href="#home" aria-label="Home"><span class="dock-label">Home</span><span class="dock-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></span></a>
+  <a class="dock-item" href="#about" aria-label="About"><span class="dock-label">About</span><span class="dock-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span></a>
+  <a class="dock-item" href="#projects" aria-label="Projects"><span class="dock-label">Projects</span><span class="dock-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg></span></a>
+  <a class="dock-item" href="#design-work" aria-label="Design"><span class="dock-label">Design</span><span class="dock-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/></svg></span></a>
+  <a class="dock-item" href="#skills" aria-label="Skills"><span class="dock-label">Skills</span><span class="dock-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"/><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"/><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"/></svg></span></a>
+  <a class="dock-item" href="#contact" aria-label="Contact"><span class="dock-label">Contact</span><span class="dock-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span></a>
+</nav>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<section class="hero" id="home">
+  <canvas class="hero-fx" aria-hidden="true"></canvas>
+
+  <img class="tear tear-tl" src="assets/images/top_left.png" alt="">
+  <img class="tear tear-tr" src="assets/images/top_right.png" alt="">
+  <img class="tear tear-bl" src="assets/images/bottom_left.png" alt="">
+
+
+
+
+  <div class="content">
+
+    <h1> Hi I'm </h1>
+
+    <div class="script">
+      Syed Mohammed Rayan
+    </div>
+
+    <div class="buttons">
+
+      <a href="#projects">
+        View work
+      </a>
+
+      <a href="#contact">
+        Contact me
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <div class="photo">
+
+    <img
+      src="assets/images/hero_pic.png"
+      alt="Syed Mohammed Rayan"
+    >
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT SECTION
+========================= -->
+
+<section class="about" id="about">
+
+  <div class="about-body">
+
+
+    <!-- DOTTED CURVES -->
+
+    <svg
+      class="about-dots"
+      viewBox="0 0 380 660"
+      preserveAspectRatio="xMinYMin meet"
+      aria-hidden="true"
+    >
+
+
+      <!-- Curve 1 -->
+
+      <path
+        class="dot-path"
+        d="M-95 1 C -50 110 75 230 170 300"
+        fill="none"
+        stroke="#2e2e2e"
+        stroke-width="1.7"
+        stroke-dasharray="1.5 8"
+        stroke-linecap="round"
+      />
+
+
+      <!-- Curve 2 -->
+
+      <path
+        class="dot-path"
+        d="M285 395 C 312 418 314 442 292 460 C 270 476 246 482 228 482"
+        fill="none"
+        stroke="#2e2e2e"
+        stroke-width="1.7"
+        stroke-dasharray="1.5 8"
+        stroke-linecap="round"
+      />
+
+
+      <!-- Curve 3 -->
+
+      <path
+        class="dot-path"
+        d="M-45 657 C 10 645 30 620 118 555"
+        fill="none"
+        stroke="#2e2e2e"
+        stroke-width="1.7"
+        stroke-dasharray="1.5 8"
+        stroke-linecap="round"
+      />
+
+    </svg>
+
+
+
+    <!-- ABOUT LEFT -->
+
+    <div class="about-left">
+
+      <div class="about-photo">
+
+        <img
+          src="assets/images/2pic.png"
+          alt="Syed Mohammed Rayan"
+        >
+
+      </div>
+
+
+      <h2 class="about-heading">
+        About Me
+      </h2>
+
+    </div>
+
+
+
+    <!-- ABOUT RIGHT -->
+
+    <div class="about-right">
+
+      <div class="about-text">
+
+        <p>
+          I'm Syed Mohammed Rayan, a passionate Full Stack Developer and
+          UI/UX Designer based in Bangalore, India. I recently completed
+          my BCA degree with a CGPA of 8.44 and an SGPA of 8.98.
+        </p>
+
+
+        <p>
+          Currently, I'm interning at MAESTER&reg;, where I work on
+          multiple brands like Builders &amp; Designers, DesignMAESTER,
+          MAESTER Productions, Closest, and MAESTER Classes. My work
+          involves full-stack development, UI/UX design, video editing,
+          and even mentoring workshops.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROJECTS SECTION
+========================= -->
+
+<section class="projects" id="projects">
+
+
+  <div class="projects-intro">
+
+    <p class="projects-eyebrow">
+      Selected work
+    </p>
+
+    <h2 class="projects-heading">
+      Projects
+    </h2>
+
+  </div>
+
+
+
+  <div class="project-stack">
+
+
+    <!-- PROJECT 1 -->
+
+    <article class="project-wrap">
+
+      <div class="project-card project-card--1">
+
+
+        <div class="project-showcase project-showcase--a">
+
+          <div class="laptop-mockup desktop-mockup" data-mockup="desktop">
+            <div class="laptop-screen">
+              <div class="laptop-camera"></div>
+              <div class="mockup-viewport">
+                <img
+                  src="assets/images/closest D.png"
+                  alt="Closest desktop website full-page preview"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+            <div class="laptop-hinge"></div>
+            <div class="laptop-base">
+              <div class="laptop-trackpad"></div>
+            </div>
+          </div>
+
+          <div class="mockup-window phone-mockup" data-mockup="mobile">
+            <div class="phone-speaker"></div>
+            <div class="phone-viewport phone-viewport--scrollable" data-lenis-prevent>
+              <img
+                class="phone-fallback-image"
+                src="assets/images/closest M.png"
+                alt="Closest mobile website preview"
+              >
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="project-info">
+
+          <span class="project-tag">
+            01
+          </span>
+
+          <h3>
+            Closest
+          </h3>
+
+          <p>
+            A privacy-first social network for chatting and sharing photos with someone close. Every friend gets their own update stream, so what you share is visible only to them.
+          </p>
+
+          <a
+            href="https://closest.in/"
+            class="project-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project &rarr;
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- PROJECT 2 -->
+
+    <article class="project-wrap">
+
+      <div class="project-card project-card--2">
+
+
+        <div class="project-info">
+
+          <span class="project-tag">
+            02
+          </span>
+
+          <h3>
+            Builders &amp; Designers
+          </h3>
+
+          <p>
+            Website for an architecture and interior design studio — floor plans, 2D/3D interiors and elevations, plus renovation and civil works for residential and commercial projects.
+          </p>
+
+          <a
+            href="https://buildersanddesigners.com"
+            class="project-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project &rarr;
+          </a>
+
+        </div>
+
+
+        <div class="project-showcase project-showcase--b">
+
+          <div class="laptop-mockup desktop-mockup" data-mockup="desktop">
+            <div class="laptop-screen">
+              <div class="laptop-camera"></div>
+              <div class="mockup-viewport">
+                <img
+                  src="assets/images/b&amp;d D.png"
+                  alt="Builders &amp; Designers desktop website full-page preview"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+            <div class="laptop-hinge"></div>
+            <div class="laptop-base">
+              <div class="laptop-trackpad"></div>
+            </div>
+          </div>
+
+          <div class="mockup-window phone-mockup" data-mockup="mobile">
+            <div class="phone-speaker"></div>
+            <div class="phone-viewport">
+              <iframe
+                src="https://buildersanddesigners.com/"
+                title="Builders &amp; Designers mobile website preview"
+                loading="lazy"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+
+    <!-- PROJECT 3 -->
+
+    <article class="project-wrap">
+
+      <div class="project-card project-card--3">
+
+
+        <div class="project-info">
+
+          <span class="project-tag">
+            03
+          </span>
+
+          <h3>
+            Transgulf International
+          </h3>
+
+          <p>
+            Corporate site for a global shipping, chartering and logistics company covering project cargo, freight, customs, warehousing and LPG/LNG shipping.
+          </p>
+
+          <a
+            href="https://transgulfinternational.com/"
+            class="project-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View project &rarr;
+          </a>
+
+        </div>
+
+
+        <div class="project-showcase project-showcase--c">
+
+          <div class="laptop-mockup desktop-mockup" data-mockup="desktop">
+            <div class="laptop-screen">
+              <div class="laptop-camera"></div>
+              <div class="mockup-viewport">
+                <img
+                  src="assets/images/transgulf D.png"
+                  alt="Transgulf International desktop website full-page preview"
+                  loading="lazy"
+                >
+              </div>
+            </div>
+            <div class="laptop-hinge"></div>
+            <div class="laptop-base">
+              <div class="laptop-trackpad"></div>
+            </div>
+          </div>
+
+          <div class="mockup-window phone-mockup" data-mockup="mobile">
+            <div class="phone-speaker"></div>
+            <div class="phone-viewport">
+              <iframe
+                src="https://transgulfinternational.com/"
+                title="Transgulf International mobile website preview"
+                loading="lazy"
+                allow="fullscreen"
+              ></iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+
+
+<!-- =========================
+     GRAPHIC DESIGN SHOWCASE
+     Uses the same pinned stacked-card presentation model as Projects.
+========================= -->
+<section class="design-showcase" id="design-work">
+  <div class="design-intro">
+    <p class="design-eyebrow">Graphic design</p>
+    <h2 class="design-heading">Design</h2>
+  </div>
+
+  <div class="design-stack">
+    <article class="design-wrap">
+      <div class="design-card">
+        <div class="design-info">
+          <span class="design-tag">01</span>
+          <h3>Madrasa Afsariya Darul Quran</h3>
+          <p>Banner design combining Arabic and English information into a clear promotional layout.</p>
+          <div class="design-actions">
+            <span class="design-type">Banner</span>
+            <button type="button" class="design-view" data-full="assets/designs/madrasa-afsariya-banner.png" data-kind="image" aria-label="View image: Madrasa Afsariya Darul Quran">View image <span aria-hidden="true">&nearr;</span></button>
+          </div>
+        </div>
+        <div class="design-art-panel"><div class="design-art-frame"><img src="assets/designs/madrasa-afsariya-banner.png" alt="Madrasa Afsariya Darul Quran banner" loading="lazy"></div></div>
+      </div>
+    </article>
+
+    <article class="design-wrap">
+      <div class="design-card">
+        <div class="design-info">
+          <span class="design-tag">02</span>
+          <h3>Madrasa E Siratul Mustaqueem</h3>
+          <p>Flyer design focused on structured information, typography and visual hierarchy.</p>
+          <div class="design-actions">
+            <span class="design-type">Flyer</span>
+            <button type="button" class="design-view" data-full="assets/designs/madrasa-siratul-flyer.png" data-kind="image" aria-label="View image: Madrasa E Siratul Mustaqueem">View image <span aria-hidden="true">&nearr;</span></button>
+          </div>
+        </div>
+        <div class="design-art-panel"><div class="design-art-frame"><img src="assets/designs/madrasa-siratul-flyer.png" alt="Madrasa E Siratul Mustaqueem flyer" loading="lazy"></div></div>
+      </div>
+    </article>
+
+    <article class="design-wrap">
+      <div class="design-card">
+        <div class="design-info">
+          <span class="design-tag">03</span>
+          <h3>Long Life Battery House</h3>
+          <p>Business card design with a compact identity system and contact-focused composition.</p>
+          <div class="design-actions">
+            <span class="design-type">Business card</span>
+            <button type="button" class="design-view" data-full="assets/designs/long-life-battery.png" data-kind="image" aria-label="View image: Long Life Battery House">View image <span aria-hidden="true">&nearr;</span></button>
+          </div>
+        </div>
+        <div class="design-art-panel"><div class="design-art-frame"><img src="assets/designs/long-life-battery.png" alt="Long Life Battery House design" loading="lazy"></div></div>
+      </div>
+    </article>
+
+    <article class="design-wrap">
+      <div class="design-card">
+        <div class="design-info">
+          <span class="design-tag">04</span>
+          <h3>HSA Enterprises</h3>
+          <p>Corporate business-card work built around a clean information hierarchy.</p>
+          <div class="design-actions">
+            <span class="design-type">Business card</span>
+            <button type="button" class="design-view" data-full="assets/designs/hsa-enterprises.png" data-kind="image" aria-label="View image: HSA Enterprises">View image <span aria-hidden="true">&nearr;</span></button>
+          </div>
+        </div>
+        <div class="design-art-panel"><div class="design-art-frame"><img src="assets/designs/hsa-enterprises.png" alt="HSA Enterprises business card" loading="lazy"></div></div>
+      </div>
+    </article>
+
+    <article class="design-wrap">
+      <div class="design-card">
+        <div class="design-info">
+          <span class="design-tag">05</span>
+          <h3>RoboWave</h3>
+          <p>Promotional design using strong product-focused composition and technology-oriented visual language.</p>
+          <div class="design-actions">
+            <span class="design-type">Promotional design</span>
+            <button type="button" class="design-view" data-full="assets/designs/robowave.png" data-kind="image" aria-label="View image: RoboWave">View image <span aria-hidden="true">&nearr;</span></button>
+          </div>
+        </div>
+        <div class="design-art-panel"><div class="design-art-frame"><img src="assets/designs/robowave.png" alt="RoboWave design" loading="lazy"></div></div>
+      </div>
+    </article>
+
+    <article class="design-wrap">
+      <div class="design-card">
+        <div class="design-info">
+          <span class="design-tag">06</span>
+          <h3>Jamia Hassan</h3>
+          <p>Communication artwork with an editorial and informational structure.</p>
+          <div class="design-actions">
+            <span class="design-type">Graphic design</span>
+            <button type="button" class="design-view" data-full="assets/designs/jamia-hassan.png" data-kind="image" aria-label="View image: Jamia Hassan">View image <span aria-hidden="true">&nearr;</span></button>
+          </div>
+        </div>
+        <div class="design-art-panel"><div class="design-art-frame"><img src="assets/designs/jamia-hassan.png" alt="Jamia Hassan design" loading="lazy"></div></div>
+      </div>
+    </article>
+
+    <article class="design-wrap">
+      <div class="design-card">
+        <div class="design-info">
+          <span class="design-tag">07</span>
+          <h3>Teacher's Diary</h3>
+          <p>Editorial-style page design focused on readability, structure and print presentation.</p>
+          <div class="design-actions">
+            <span class="design-type">Editorial</span>
+            <button type="button" class="design-view" data-full="assets/designs/teachers-diary.png" data-kind="book" aria-label="View book: Teacher's Diary">View book <span aria-hidden="true">&nearr;</span></button>
+          </div>
+        </div>
+        <div class="design-art-panel"><div class="design-art-frame"><img src="assets/designs/teachers-diary.png" alt="Teacher's Diary design" loading="lazy"></div></div>
+      </div>
+    </article>
+
+    <article class="design-wrap">
+      <div class="design-card">
+        <div class="design-info">
+          <span class="design-tag">08</span>
+          <h3>Jadeed Member Sazi</h3>
+          <p>Presentation design with a structured visual system for communicating information.</p>
+          <div class="design-actions">
+            <span class="design-type">Presentation</span>
+            <button type="button" class="design-view" data-full="assets/designs/jadeed-member-sazi.png" data-kind="presentation" aria-label="View presentation: Jadeed Member Sazi">View presentation <span aria-hidden="true">&nearr;</span></button>
+          </div>
+        </div>
+        <div class="design-art-panel"><div class="design-art-frame"><img src="assets/designs/jadeed-member-sazi.png" alt="Jadeed Member Sazi presentation" loading="lazy"></div></div>
+      </div>
+    </article>
+
+    <article class="design-wrap">
+      <div class="design-card">
+        <div class="design-info">
+          <span class="design-tag">09</span>
+          <h3>Bait-ul-Maal &amp; Model Village</h3>
+          <p>Presentation artwork combining informational content with a consistent visual hierarchy.</p>
+          <div class="design-actions">
+            <span class="design-type">Presentation</span>
+            <button type="button" class="design-view" data-full="assets/designs/bait-ul-maal-model-village.png" data-kind="presentation" aria-label="View presentation: Bait-ul-Maal and Model Village">View presentation <span aria-hidden="true">&nearr;</span></button>
+          </div>
+        </div>
+        <div class="design-art-panel"><div class="design-art-frame"><img src="assets/designs/bait-ul-maal-model-village.png" alt="Bait-ul-Maal and Model Village presentation" loading="lazy"></div></div>
+      </div>
+    </article>
+
+    <article class="design-wrap">
+      <div class="design-card">
+        <div class="design-info">
+          <span class="design-tag">10</span>
+          <h3>Afkaar O Nazariyat</h3>
+          <p>Presentation design focused on editorial composition, typography and information flow.</p>
+          <div class="design-actions">
+            <span class="design-type">Presentation</span>
+            <button type="button" class="design-view" data-full="assets/designs/afkaar-o-nazariyat.png" data-kind="presentation" aria-label="View presentation: Afkaar O Nazariyat">View presentation <span aria-hidden="true">&nearr;</span></button>
+          </div>
+        </div>
+        <div class="design-art-panel"><div class="design-art-frame"><img src="assets/designs/afkaar-o-nazariyat.png" alt="Afkaar O Nazariyat presentation" loading="lazy"></div></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+<!-- =========================
+     SKILLS SECTION
+========================= -->
+<section class="skills" id="skills">
+  <svg class="section-dots section-dots--dark" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M-40 140 C 300 40 520 360 820 250 S 1250 120 1500 380" fill="none" stroke-width="1.7" stroke-dasharray="1.5 8" stroke-linecap="round"/><path d="M-40 820 C 260 700 480 880 760 760 S 1200 640 1500 760" fill="none" stroke-width="1.7" stroke-dasharray="1.5 8" stroke-linecap="round"/></svg>
+
+  <div class="skills-intro">
+    <p class="skills-eyebrow">What I do</p>
+    <h2 class="skills-heading">Skills</h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <article class="skill-group">
+      <span class="skill-index">01</span>
+      <h3>Development</h3>
+      <p>Building fast, responsive, full-stack websites from design to deployment.</p>
+      <ul class="skill-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>GSAP animation</li>
+        <li>Responsive design</li>
+        <li>Full-stack development</li>
+      </ul>
+    </article>
+
+    <article class="skill-group">
+      <span class="skill-index">02</span>
+      <h3>UI / UX Design</h3>
+      <p>Interfaces that feel clear and considered, from first sketch to final screen.</p>
+      <ul class="skill-list">
+        <li>Wireframing</li>
+        <li>Prototyping</li>
+        <li>Layout &amp; hierarchy</li>
+        <li>Typography</li>
+        <li>Design systems</li>
+      </ul>
+    </article>
+
+    <article class="skill-group">
+      <span class="skill-index">03</span>
+      <h3>Graphic Design</h3>
+      <p>Print and digital artwork with strong structure and visual hierarchy.</p>
+      <ul class="skill-list">
+        <li>Banners &amp; flyers</li>
+        <li>Business cards</li>
+        <li>Presentations</li>
+        <li>Editorial layouts</li>
+        <li>Branding</li>
+      </ul>
+    </article>
+
+    <article class="skill-group">
+      <span class="skill-index">04</span>
+      <h3>Media</h3>
+      <p>Telling stories through video and helping others learn the craft.</p>
+      <ul class="skill-list">
+        <li>Video editing</li>
+        <li>Workshops</li>
+        <li>Mentoring</li>
+      </ul>
+    </article>
+
+  </div>
+
+  <!-- TOOLS STRIP
+       To use an official logo, replace the <svg> inside .tool-icon
+       with: <img src="assets/logos/name.svg" alt=""> -->
+  <div class="skills-tools">
+    <p class="tools-label">Tools &amp; technologies</p>
+
+    <ul class="tools-row">
+
+      <li class="tool">
+        <span class="tool-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 5h34l-3.1 34.4L24 44l-13.9-4.6z" fill="#e44d26"/><path d="M24 8v33.2l11.2-3.7L37.9 8z" fill="#f16529"/><path d="M15 17h18.6l-.5 5.5H20.8l.4 5H33l-.7 8.1L24 38l-8.2-2.4-.5-6h5.3l.3 3 3.1.9 3.2-.9.4-4H15z" fill="#fff"/></svg>
+        </span>
+        <span class="tool-name">HTML5</span>
+      </li>
+
+      <li class="tool">
+        <span class="tool-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 5h34l-3.1 34.4L24 44l-13.9-4.6z" fill="#1572b6"/><path d="M24 8v33.2l11.2-3.7L37.9 8z" fill="#33a9dc"/><path d="M15 17h18.9l-.5 5.5H20.8l.4 5h11.6l-.7 8.1L24 38l-8.2-2.4-.5-6h5.3l.3 3 3.1.9 3.2-.9.4-4H15z" fill="#fff"/></svg>
+        </span>
+        <span class="tool-name">CSS3</span>
+      </li>
+
+      <li class="tool">
+        <span class="tool-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="4" fill="#f7df1e"/><text x="43" y="41" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="19" fill="#111">JS</text></svg>
+        </span>
+        <span class="tool-name">JavaScript</span>
+      </li>
+
+      <li class="tool">
+        <span class="tool-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="4" y="4" width="40" height="40" rx="10" fill="#0ae448"/><text x="24" y="33" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-weight="800" font-size="24" fill="#111">G</text></svg>
+        </span>
+        <span class="tool-name">GSAP</span>
+      </li>
+
+      <li class="tool">
+        <span class="tool-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="canvaG" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#00c4cc"/><stop offset="1" stop-color="#7d2ae8"/></linearGradient></defs><circle cx="24" cy="24" r="20" fill="url(#canvaG)"/><text x="24" y="31" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="22" fill="#fff">C</text></svg>
+        </span>
+        <span class="tool-name">Canva</span>
+      </li>
+
+      <li class="tool">
+        <span class="tool-icon">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="#16a34a"/><path d="M33 17.5a11 11 0 1 0 0 13" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/></svg>
+        </span>
+        <span class="tool-name">CorelDRAW</span>
+      </li>
+
+      <li class="tool">
+        <span class="tool-icon">
+          <img src="assets/logos/capcut.png" alt="" loading="lazy">
+        </span>
+        <span class="tool-name">CapCut</span>
+      </li>
+
+      <li class="tool">
+        <span class="tool-icon">
+          <img src="assets/logos/filmora.png" alt="" loading="lazy">
+        </span>
+        <span class="tool-name">Filmora</span>
+      </li>
+
+    </ul>
+  </div>
+
+</section>
+
+<!-- =========================
+     CONTACT SECTION
+     >>> EDIT HERE: replace the email (in 2 places: the mailto link
+     and data-email on the form) and the three social URLs.
+========================= -->
+<section class="contact" id="contact">
+  <svg class="section-dots section-dots--light" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M-40 140 C 300 40 520 360 820 250 S 1250 120 1500 380" fill="none" stroke-width="1.7" stroke-dasharray="1.5 8" stroke-linecap="round"/><path d="M-40 820 C 260 700 480 880 760 760 S 1200 640 1500 760" fill="none" stroke-width="1.7" stroke-dasharray="1.5 8" stroke-linecap="round"/></svg>
+
+  <div class="contact-inner">
+
+    <div class="contact-left">
+      <p class="contact-eyebrow">Get in touch</p>
+      <h2 class="contact-heading">Let's work<br>together</h2>
+      <p class="contact-lead">
+        Have a project, an idea or just want to say hello? Send me a message
+        and I'll get back to you soon.
+      </p>
+
+      <ul class="contact-details">
+        <li>
+          <span class="contact-key">Email</span>
+          <a href="mailto:srayan4321@gmail.com">srayan4321@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact-key">Based in</span>
+          <span>Bangalore, India</span>
+        </li>
+        <li>
+          <span class="contact-key">Elsewhere</span>
+          <span class="contact-socials">
+            <a href="https://www.linkedin.com/in/syed-mohammed-rayan-1735bb350" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/rayannedtiz" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contact-form" data-email="srayan4321@gmail.com" novalidate>
+      <label class="field">
+        <span>Name</span>
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label class="field">
+        <span>Your email</span>
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+      <label class="field">
+        <span>Message</span>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="contact-submit">Send message <span aria-hidden="true">&nearr;</span></button>
+      <p class="form-note" role="status" aria-live="polite"></p>
+    </form>
+
+  </div>
+
+  <footer class="site-footer">
+    <span>&copy; <span id="year">2026</span> Syed Mohammed Rayan</span>
+    <a href="#home" class="to-top">Back to top &uarr;</a>
+  </footer>
+
+</section>
+
+
+
+<!-- =========================
+     MAIN JAVASCRIPT
+========================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
+<!-- =========================
+     ABOUT CURVE DOTS
+========================= -->
+
+<script>
+
+document.querySelectorAll('.dot-path').forEach((path, index) => {
+
+  const length = path.getTotalLength();
+
+  const point = path.getPointAtLength(length / 2);
+
+
+  const dot = document.createElementNS(
+    'http://www.w3.org/2000/svg',
+    'circle'
+  );
+
+
+  dot.setAttribute(
+    'class',
+    'dot-node'
+  );
+
+
+  dot.setAttribute(
+    'cx',
+    point.x
+  );
+
+
+  dot.setAttribute(
+    'cy',
+    point.y
+  );
+
+
+  dot.setAttribute(
+    'r',
+    '5.5'
+  );
+
+
+  dot.setAttribute(
+    'fill',
+    '#2e2e2e'
+  );
+
+
+  /*
+   * MIDDLE CURVE DOT
+   *
+   * Same position as tested
+   * in the DevTools console:
+   *
+   * +12px → right
+   * -25px → up
+   */
+
+  if (index === 1) {
+
+    dot.setAttribute(
+      'cx',
+      point.x + 12
+    );
+
+    dot.setAttribute(
+      'cy',
+      point.y - 25
+    );
+
+  }
+
+
+  path.parentNode.appendChild(dot);
+
+});
+
+</script>
+
+
+
+  <script src="js/motion.js"></script>
+  <script src="js/design-viewer.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/interact.js"></script>
+
+</body>
+</html>
