@@ -54,20 +54,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const tl = gsap.timeline({
       defaults: { ease: 'power2.out' },
-      scrollTrigger: { trigger: about, start: 'top 85%', end: 'top -25%', scrub: 0.8 }
+      scrollTrigger: { trigger: about, start: 'top 70%', end: 'top 10%', scrub: 0.8 }
     });
 
     tl.fromTo(photo, { yPercent: 14, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.7, ease: 'power2.out' }, 0);
 
-    maskPaths.forEach((m, i) => {
-      tl.to(m, { strokeDashoffset: 0, duration: 0.55, ease: 'none' }, 0.75 + i * 0.4)
-        .to(nodes[i], { scale: 1, duration: 0.25, ease: 'back.out(3)' }, 1.15 + i * 0.4);
-    });
+   maskPaths.forEach((m, i) => {
+ tl.to(m, {
+  strokeDashoffset: 0,
+  duration: 0.55,
+  ease: 'none'
+}, 0.85 + i * 0.35)
 
-    tl.fromTo(heading,
-        { clipPath: 'inset(0% -10% 100% -10%)', yPercent: 40 },
-        { clipPath: 'inset(-25% -10% -25% -10%)', yPercent: 0, duration: 0.5 }, 2.2)
-      .from(paras, { y: 50, opacity: 0, stagger: 0.3, duration: 0.5 }, 2.6);
+  .to(nodes[i], {
+    scale: 1,
+    duration: 0.2,
+    ease: 'back.out(3)'
+  }, 0.65 + i * 0.3);
+});
+
+tl.fromTo(heading,
+    { clipPath: 'inset(0% -10% 100% -10%)', yPercent: 40 },
+    { clipPath: 'inset(-25% -10% -25% -10%)', yPercent: 0, duration: 0.5 }, 1.35)
+  .from(paras, {
+    y: 50,
+    opacity: 0,
+    stagger: 0.15,
+    duration: 0.4
+  }, 1.95);
 
     /* Settled: the whole composition drifts up and out as projects arrive */
     gsap.to(svg, {
