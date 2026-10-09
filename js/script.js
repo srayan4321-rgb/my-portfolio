@@ -57,12 +57,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const stack = document.querySelector('.project-stack');
   const cards = gsap.utils.toArray('.project-card');
 
+  /* The pinned stack needs a big screen. On phones and short windows the
+     cards are plain stacked blocks (see the PROJECTS media query in
+     style.css), so no pin is created there. */
   if (stack && cards.length >= 2) {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    if (reduceMotion) {
-      gsap.set(cards, { yPercent: 0 });
-    } else {
+    gsap.matchMedia().add('(min-width: 901px) and (min-height: 521px)', () => {
+      if (reduceMotion) {
+        gsap.set(cards, { yPercent: 0 });
+        return;
+      }
+
       cards.forEach((card, i) => {
         gsap.set(card, {
           yPercent: i === 0 ? 0 : 100,
@@ -93,6 +99,18 @@ document.addEventListener('DOMContentLoaded', () => {
         timeline.to(card, {
           yPercent: 0,
           duration: 1
+        });
+      });
+    });
+
+    /* phones / short windows: simple reveal as each card scrolls in */
+    if (!reduceMotion) {
+      gsap.matchMedia().add('(max-width: 900px), (max-height: 520px)', () => {
+        cards.forEach((card) => {
+          gsap.from(card, {
+            y: 40, opacity: 0, duration: 0.7, ease: 'power2.out',
+            scrollTrigger: { trigger: card, start: 'top 88%', once: true }
+          });
         });
       });
     }
