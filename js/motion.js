@@ -100,7 +100,7 @@ tl.fromTo(heading,
   });
 
   // DESIGN — horizontal scroll exhibition.
-  mm.add('(min-width: 901px) and (min-height: 521px)', safe('design', () => {
+  mm.add('(min-width: 901px)', safe('design', () => {
     const section = document.querySelector('.design-showcase');
     const stack = document.querySelector('.design-stack');
     const cards = stack ? gsap.utils.toArray('.design-card', stack) : [];
@@ -169,7 +169,7 @@ tl.fromTo(heading,
     };
   }));
 
-  mm.add('(max-width: 900px), (max-height: 520px)', () => {
+  mm.add('(max-width: 900px)', () => {
     const cards=gsap.utils.toArray('.design-card');
     if(!cards.length) return;
     gsap.from(cards,{y:28,opacity:0,stagger:.08,duration:.6,ease:'power2.out',scrollTrigger:{trigger:'.design-showcase',start:'top 75%',once:true}});
